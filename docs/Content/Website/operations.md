@@ -11,3 +11,5 @@ git push -u origin main
 ```shell 
 mkdocs gh-deploy
 ```
+
+但是借助Github Actions，我们可以编写脚本实现向main分支推送时，自动更新gh-pages分支。
