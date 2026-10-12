@@ -22,6 +22,8 @@ nav:
     - TOC: ./Content/Course/index.md
   - Research:
     - TOC: ./Content/Research/index.md 
+  - Website:
+    - Operations: ./Content/Website/operations.md
 
 # Markdown 扩展（核心部分，对应.md语法需求）
 makrdown_extension:
