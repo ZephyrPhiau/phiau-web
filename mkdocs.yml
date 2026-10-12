@@ -6,12 +6,24 @@ theme:
     logo: material/github # 网站logo更改
   language: zh
   palette:             # 明暗模式和颜色更改
+    - media: "(prefers-color-scheme)" # Palette toggle for automatic mode
+      toggle:
+        icon: material/brightness-auto
+        name: Switch to another mode
     - media: "(prefers-color-scheme: light)" # 明
       scheme: default
-      primary: blue      # 导航栏颜色修改
+      primary: teal       # for the header, the sidebar, text links and several other components
+      accent: deep purple # denote elements that can be interacted with, e.g. hovered links, buttons and scrollbars
       toggle:
         icon: material/brightness-4
-        name: Switch to light mode # 改提示词处（光标放在按钮上显示的提示词）
+        name: Switch to dark mode # 改提示词处（光标放在按钮上显示的提示词）
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: blue
+      accent: deep purple
+      toggle:
+        icon: material/brightness-7
+        name: Switch to light mode
   features:
     - navigation.tabs  # 顶部分类标签
     - navigation.top   # 返回顶部按钮
@@ -26,7 +38,7 @@ nav:
     - Operations: ./Content/Website/operations.md
 
 # Markdown 扩展（核心部分，对应.md语法需求）
-makrdown_extension:
+markdown_extensions:
   - toc: # 目录支持
     permalink: true # 生成锚点链接
   - pymdownx.arithmatex: # 数学公式
