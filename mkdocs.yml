@@ -30,47 +30,48 @@ theme:
     - search.highlight # 搜索结果高亮
 
 nav:
+  - Home: index.md
   - Course:
-    - TOC: ./Content/Course/index.md
+    - TOC: Content/Course/index.md
   - Research:
-    - TOC: ./Content/Research/index.md 
+    - TOC: Content/Research/index.md
   - Website:
-    - Operations: ./Content/Website/operations.md
+    - Operations: Content/Website/operations.md
 
 # Markdown 扩展（核心部分，对应.md语法需求）
 markdown_extensions:
   - toc: # 目录支持
-    permalink: true # 生成锚点链接
+      permalink: true # 生成锚点链接
   - pymdownx.arithmatex: # 数学公式
-    generic: true
+      generic: true
   - pymdownx.highlight: # 代码部分
-    anchor_linenums: true # 代码行号
-    line_spans: __span
-    pygments_lang_class: true
+      anchor_linenums: true # 代码行号
+      line_spans: __span
+      pygments_lang_class: true
   - pymdownx.inlinehilite # 行内代码高亮
   - pymdownx.superfences # 支持复杂的代码块嵌套
   - pymdownx.snippets     # 支持代码片段导入
   - pymdownx.tasklist: # 列表
-    custom_checkbox: true # 漂亮的复选框样式
+      custom_checkbox: true # 漂亮的复选框样式
   - pymdownx.betterem: # 字体设置 # 优化粗体和斜体
-    smart_enable: All
-  - pymdownx.caret: # 支持上标^和下划线_
-  - pymdownx.mark:  # 支持高亮====
-  - pymdownx.tilde: # 支持删除线~~~~
+      smart_enable: All
+  - pymdownx.caret # 支持上标^和下划线_
+  - pymdownx.mark  # 支持高亮====
+  - pymdownx.tilde # 支持删除线~~~~
   - footnotes # 脚注
   - attr_list # 图片允许调整大小 # 允许使用{: width="300"} 语法调整图片
   # 额外
   - admonition # 漂亮的提示框
   - pymdownx.details # 折叠详情
   - pymdownx.emoji:
-    emoji_index: !!python/name:material.extensions.emoji.twemoji
-    emoji_generator: !!python/name:material.extensions.emoji.to_svg
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
 
 # 额外的JavaScript（用于数学公式的渲染）
 extra_javascript:
   - javascripts/mathjax.js # 本地文件
-  - https://polyfill.io/v3/polyfill.min.js?features=es6
+  # - https://polyfill.io/v3/polyfill.min.js?features=es6
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
 extra_css:
-  - stylesheets/extra.css # 新增，用于给表格加横线  
+  - stylesheets/extra.css # 新增，用于给表格加横线
 copyright: Copyright @ 2026~2026 Phiau All Rights Reserved
