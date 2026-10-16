@@ -3,13 +3,13 @@ site_name: Phiau's Website
 theme:
   name: material
   icon:
-    logo: material/github # 网站logo更改
+    logo: material/library # 网站logo更改
   language: zh
   palette:             # 明暗模式和颜色更改
-    - media: "(prefers-color-scheme)" # Palette toggle for automatic mode
-      toggle:
-        icon: material/brightness-auto
-        name: Switch to another mode
+    # - media: "(prefers-color-scheme)" # Palette toggle for automatic mode
+    #  toggle:
+    #    icon: material/brightness-auto
+    #    name: Switch to another mode
     - media: "(prefers-color-scheme: light)" # 明
       scheme: default
       primary: teal       # for the header, the sidebar, text links and several other components
@@ -26,11 +26,30 @@ theme:
         name: Switch to light mode
   features:
     - navigation.tabs  # 顶部分类标签
+    - navigation.tabs.sticky
     - navigation.top   # 返回顶部按钮
     - search.highlight # 搜索结果高亮
+    - navigation.instant
+    - navigation.instant.prefetch
+    - navigation.instant.progress
+    - navigation.tracking
+    - navigation.path
+    - navigation.prune
+    - toc.integrate
+    - toc.follow
+    - search.suggest
+  font:
+    text : Roboto
+    code : Roboto Mono
+
+plugins:
+  - search:
+  #- blog
 
 nav:
   - Home: index.md
+#  - Blog:
+#    - blog : index.md
   - Course:
     - TOC: Content/Course/index.md
   - Research:
@@ -66,6 +85,19 @@ markdown_extensions:
   - pymdownx.emoji:
       emoji_index: !!python/name:material.extensions.emoji.twemoji
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
+#  - material.extensions.preview:
+#    configurations:
+#      - targets:
+#          include:
+
+extra:
+  consent:
+    title: Cookie consent
+    description: >- 
+      We use cookies to recognize your repeated visits and preferences, as well
+      as to measure the effectiveness of our documentation and whether users
+      find what they're searching for. With your consent, you're helping us to
+      make our documentation better.
 
 # 额外的JavaScript（用于数学公式的渲染）
 extra_javascript:

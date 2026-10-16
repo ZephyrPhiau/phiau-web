@@ -1,3 +1,12 @@
+---
+hide:
+  - navigation
+  - toc
+---
+
+# Page title
+...
+
 # 提交更新
 ## 提交
 ```shell
