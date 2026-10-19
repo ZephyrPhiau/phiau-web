@@ -2,6 +2,7 @@ site_name: Phiau's Website
 
 theme:
   name: material
+  custom_dir: overrides
   icon:
     logo: material/library # 网站logo更改
   language: zh

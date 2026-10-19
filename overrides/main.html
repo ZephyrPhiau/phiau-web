@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block content %}
+  {% if page.meta.hero %}
+    <div class="hero-image">
+      <img src="{{ page.meta.hero }}" alt="{{ page.title }}">
+    </div>
+  {% endif %}
+  {{ super() }}  {# 保留原有页面内容 #}
+{% endblock %}
+
+
+{% block header %}
+  <div class="custom-header-banner">
+    {{ super() }}  {# 保留原有的导航栏等头部元素 #}
+  </div>
+{% endblock %}

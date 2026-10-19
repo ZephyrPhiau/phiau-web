@@ -1,19 +1,12 @@
-# Welcome to MkDocs
+---
+hide:
+    - navigation
+    - toc
+title: "我的首页"
+hero: assets/images/cover.png
+---
 
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
+# Welcome to Phiau's Website！
+Here you will find my study notes, research records, website maintenance updates, and more, as well as Phiau’s records of life’s little moments.
 
-## Commands
-
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs -h` - Print help message and exit.
-
-## Project layout
-
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
-
-[operations](./Content/Website/operations.md){ data-preview}
+这里将会展示我的学习笔记、科研记录、网站维护等等内容，还有Phiau对生活点点滴滴的记录~

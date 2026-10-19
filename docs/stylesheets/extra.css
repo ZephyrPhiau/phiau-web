@@ -14,3 +14,26 @@
 .md-typeset .arithmatex, .MathJax {
     color: var(--md-default-fg-color) !important;
 }
+
+.hero-image {
+  margin-bottom: 2rem;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+.hero-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.custom-header-banner {
+  background-image: url('../assets/images/header.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+/* 让原有导航栏背景透明，以显示底图 */
+.md-header {
+  background-color: transparent !important;
+}
